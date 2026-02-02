@@ -9,6 +9,7 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --color-skyblue: #0166BF;
+  --color-darkblue: #0F172A;
 }
 
 @theme inline {
