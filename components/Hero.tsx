@@ -5,15 +5,16 @@ import Image from 'next/image' // 1. Import the Image component
 import image1 from '@/assets/image1.webp'
 import image2 from '@/assets/image2.webp'
 import image3 from '@/assets/image3.webp'
+import ivmherobg from '@/assets/ivmherobg.jpeg'
 import Navbar from './Navbar'
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { type: 'image', url: image1, alt: "IVM G80 Front" }, // Added alt text
-    { type: 'image', url: image2, alt: "IVM Caris Side" },
-    { type: 'image', url: image3, alt: "IVM Granite Rear" },
+    { type: 'image', url: ivmherobg, alt: "IVM G80 Front" }, // Added alt text
+    // { type: 'image', url: image2, alt: "IVM Caris Side" },
+    // { type: 'image', url: image3, alt: "IVM Granite Rear" },
   ];
 
   useEffect(() => {
@@ -25,13 +26,13 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className='relative w-full h-40dvh md:h-screen overflow-hidden bg-black'>
+    <div className='relative w-full h-screen md:h-screen overflow-hidden bg-black'>
       <Navbar />
       {/* <div className="absolute top-0 w-full z-50">
         <Navbar />
       </div> */}
 
-      <section className='relative w-full h-100 md:h-full flex items-center justify-center'>
+      <section className='relative w-full h-full md:h-full flex items-center justify-center'>
         
         <div className="absolute inset-0 w-full h-full z-0">
           {slides.map((slide, index) => (
@@ -62,24 +63,24 @@ const Hero = () => {
         </div>
 
         {/* Content... */}
-        <div className='relative z-20 text-left flex flex-col items-center mt-10 px-4'>
+        <div className='relative z-20 text-left flex flex-col top-30 h-full items-center mt-10 px-4'>
           <h1 className='hidden md:flex text-3xl md:text-6xl font-extrabold text-white leading-tight'>
-            The Pride of African Roads
+            The Pride of <br /> African Roads
           </h1>
-          <h1 className='md:hidden flex text-2xl md:text-6xl font-extrabold text-white leading-tight'>
+          <h1 className='md:hidden text-2xl md:text-6xl font-extrabold text-white leading-tight'>
             The Pride of <br /> 
             <span className='text-sky-400'> African Roads</span>
           </h1>
           
-          <p className='text-white/80 my-6 text-sm md:text-lg tracking-wide'>
+          <p className='text-white/80 my-4 text-sm md:text-lg tracking-wide'>
             Precision Engineering. Unmatched Elegance.
           </p>
           
           <div className='flex flex-wrap justify-center gap-4'>
-            <button className='px-8 py-3 font-bold rounded-full bg-skyblue text-white transition-colors'>
+            <button className='px-4 md:px-8 py-1 md:py-3 font-semibold text-sm rounded-full bg-skyblue text-white transition-colors'>
               Experience G80
             </button>
-            <button className='px-8 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/20 transition-colors'>
+            <button className='px-4 md:px-8 py-1 md:py-3 text-sm  bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-full hover:bg-white/20 transition-colors'>
               View Inventory
             </button>
           </div>
