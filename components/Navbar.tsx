@@ -171,11 +171,11 @@ const Navbar = () => {
         
         {/* MOBILE HEADER */}
         <div className="flex items-center justify-between px-6 h-14 border-b border-gray-100 shrink-0">
-          <button onClick={() => setIsOpen(false)} className="p-2 -ml-2 text-black transition-colors">
+          <button onClick={() => setIsOpen(false)} className="opacity-0 p-2 -ml-2 text-black transition-colors">
             <ChevronRight className="rotate-180 w-6 h-6" /> 
           </button>
-          <button onClick={() => setIsOpen(false)} className="p-2 -mr-2 text-black transition-colors">
-            <X className="w-6 h-6" />
+          <button onClick={() => setIsOpen(false)} className="p-2 -mr-2 text-black/60 transition-colors">
+            <X className="w-4 h-4" />
           </button>
         </div>
 
@@ -190,7 +190,7 @@ const Navbar = () => {
               onClick={() => setMobileSubMenu(item)} // OPEN SUB-MENU
               className="w-full group flex items-center justify-between py-6 border-b border-gray-100 text-black transition-colors"
             >
-              <span className="text-lg font-medium tracking-wide">{item}</span>
+              <span className=" font-medium tracking-wide">{item}</span>
               <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-sky-500 transition-colors" />
             </button>
           ))}
