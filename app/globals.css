@@ -7,8 +7,9 @@
 }
 
 @theme {
+  /* --color-skyblue: #0166BF; */
+  --color-skyblue: #004E9F;
   --font-inter: "Inter", sans-serif;
-  --color-skyblue: #0166BF;
   --color-darkblue: #0F172A;
 }
 
@@ -19,12 +20,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

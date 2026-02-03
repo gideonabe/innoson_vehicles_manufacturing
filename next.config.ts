@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.innosonvehicles.com',
+        hostname: 'img.freepik.com',
         pathname: '/**', // Allows all paths under this domain
       },
     ],

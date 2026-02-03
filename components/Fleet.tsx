@@ -59,12 +59,12 @@ const Fleet = () => {
   };
 
   return (
-    <section id='models' className='py-10 relative'>
+    <section id='models' className='py-10 relative bg-white'>
       <div className='max-w-[90%] mx-auto'>
         <h1 className='text-xl md:text-3xl text-center md:text-left font-bold text-white'>Our Models</h1>
         
         <div className='flex flex-col md:flex-row justify-between items-center w-full pb-2 mb-6'>
-          <p className='text-white/60 text-base md:text-lg mb-6 md:mb-0'>
+          <p className='text-white/60 text-base md:text-lg mb-5 md:mb-0'>
             Crafted for the diverse terrains of the continent.
           </p>
 
@@ -97,7 +97,7 @@ const Fleet = () => {
             {currentData.map((vehicle) => (
               <div key={vehicle.id} className='group overflow-hidden transition-all duration-300 animate-[fadeIn_0.5s_ease-out]'>
                 <Link href={`/models/${vehicle.slug}`}> 
-                  <div className='h-64 w-full flex items-center justify-center transition-transform duration-500 bg-amber-500 rounded-4xl relative overflow-hidden'>
+                  <div className='h-64 w-full flex items-center justify-center transition-transform duration-500 rounded-4xl relative overflow-hidden'>
                     <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"/>
                     <Image 
                       src={vehicle.image} 

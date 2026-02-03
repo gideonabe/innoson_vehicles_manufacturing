@@ -1,9 +1,9 @@
-// src/data/vehicle.ts
 import { StaticImageData } from "next/image";
 
 import image1 from '@/assets/image1.webp'
 import image2 from '@/assets/image2.webp'
 import image3 from '@/assets/image3.webp'
+import nobg1 from '@/assets/nobg2.png'
 
 export interface Vehicle {
   id: number;
@@ -25,8 +25,8 @@ export const vehicleData: Vehicle[] = [
     name: 'G80 Luxury SUV',
     category: 'SUVs',
     price: '₦60,000,000',
-    // image: 'https://www.innosonvehicles.com/wp-content/uploads/2024/09/IVM-EV-LEMON-FRONT-1.png',
-    image: image1,
+    // image: 'https://img.freepik.com/premium-psd/modern-car-transparent-background-3d-rendering-illustration_494250-34947.jpg',
+    image: nobg1,
     range: 650,
     power: 350,
     description: "The IVM G80 is designed for the African elite. Combining rugged durability with executive-class luxury, it features a reinforced chassis suitable for all terrains without compromising on comfort.",
