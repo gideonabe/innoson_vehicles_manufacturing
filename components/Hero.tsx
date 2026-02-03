@@ -26,13 +26,13 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className='relative w-full h-screen md:h-screen overflow-hidden bg-black'>
+    <div className='relative w-full h-screen overflow-hidden bg-black'>
       <Navbar />
       {/* <div className="absolute top-0 w-full z-50">
         <Navbar />
       </div> */}
 
-      <section className='relative w-full h-full md:h-full flex items-center justify-center'>
+      <section className='relative w-full h-full   md:h-full flex items-center justify-center'>
         
         <div className="absolute inset-0 w-full h-full z-0">
           {slides.map((slide, index) => (
@@ -59,20 +59,20 @@ const Hero = () => {
             </div>
           ))}
 
-          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-black/50 z-10"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-black/0 z-10"></div>
         </div>
 
         {/* Content... */}
-        <div className='relative z-20 text-left flex flex-col top-30 h-full items-center mt-10 px-4'>
+        <div className='relative z-20 text-left flex flex-col top-30 h-full items-center mt-22 px-4'>
           <h1 className='hidden md:flex text-3xl md:text-6xl font-extrabold text-white leading-tight'>
             The Pride of <br /> African Roads
           </h1>
-          <h1 className='md:hidden text-2xl md:text-6xl font-extrabold text-white leading-tight'>
+          <h1 className='md:hidden text-2xl md:text-6xl font-extrabold text-center text-white leading-tight'>
             The Pride of <br /> 
-            <span className='text-sky-400'> African Roads</span>
+            <span className='text-white text-4xl'> African Roads</span>
           </h1>
           
-          <p className='text-white/80 my-4 text-sm md:text-lg tracking-wide'>
+          <p className='text-white/90 my-4 text-sm md:text-lg tracking-wide'>
             Precision Engineering. Unmatched Elegance.
           </p>
           
