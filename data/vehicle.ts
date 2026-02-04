@@ -26,7 +26,7 @@ export const vehicleData: Vehicle[] = [
     category: 'SUVs',
     price: '₦60,000,000',
     // image: 'https://img.freepik.com/premium-psd/modern-car-transparent-background-3d-rendering-illustration_494250-34947.jpg',
-    image: nobg1,
+    image: image1,
     range: 650,
     power: 350,
     description: "The IVM G80 is designed for the African elite. Combining rugged durability with executive-class luxury, it features a reinforced chassis suitable for all terrains without compromising on comfort.",

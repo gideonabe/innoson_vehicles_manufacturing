@@ -7,7 +7,7 @@ const AfricanLegacy = () => {
       <div className='flex md:w-[50%] flex-col gap-4 justify-center h-full px-12 md:px-20 mt-8 md:mt-0'>
         <h4 className='text-sm md:text-base font-semibold text-skyblue'>OUR HERITAGE</h4>
         <h1 className='text-4xl md:text-6xl font-bold'>The African <br /> Legacy</h1>
-        <div className='flex flex-col gap-8 mt-4 text-sm text-white/60 '>
+        <div className='flex flex-col gap-8 mt-4 text-sm text-black/80 '>
           <p>Innoson Vehicle Manufacturing is more than a car company. We are the architects of a new African era. Our manufacturing plant in Nnewi combines state-of-the-art automation with the soul of craftmanship.</p>
           <p>Every wield, every stitch and every engine component is tested against the world's highest standards to ensure that you don't just drive - you lead.</p>
 

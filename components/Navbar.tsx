@@ -191,7 +191,7 @@ const Navbar = () => {
               className="w-full group flex items-center justify-between py-6 border-b border-gray-100 text-black transition-colors"
             >
               <span className=" font-medium tracking-wide">{item}</span>
-              <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-sky-500 transition-colors" />
+              <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-sky-500 transition-colors" />
             </button>
           ))}
           <button onClick={handleLinkClick} className="mt-8 w-full py-4 text-sm font-bold tracking-widest uppercase bg-black text-white transition-colors rounded-sm">
@@ -201,18 +201,21 @@ const Navbar = () => {
 
         {/* 2. SUB-MENU SLIDE-IN (Slides from right) */}
         <div className={`
-          absolute inset-0 top-20 bg-white z-20 transition-transform duration-500 ease-in-out flex flex-col
+          absolute inset-0 top-0 bg-white z-20 transition-transform duration-500 ease-in-out flex flex-col
           ${mobileSubMenu ? 'translate-x-0' : 'translate-x-full'}
         `}>
           {/* Sub-Menu Header */}
-          <div className="flex items-center gap-4 px-6 py-4 border-b border-gray-100 shrink-0 bg-gray-50/50">
+          <div className="flex justify-between items-center gap-4 px-6 py-4 border-b border-gray-100 shrink-0 bg-gray-50/50">
             <button 
               onClick={() => setMobileSubMenu(null)} // GO BACK
               className="flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-black uppercase tracking-widest"
             >
               <ChevronLeft className="w-5 h-5" /> Back
             </button>
-            <span className="text-lg font-bold uppercase ml-auto">{mobileSubMenu}</span>
+            {/* <span className="text-lg font-bold uppercase ml-auto">{mobileSubMenu}</span> */}
+            <button onClick={() => setIsOpen(false)} className="p-2 mr-2 text-black/60 transition-colors">
+              <X className="w-4 h-4" />
+            </button>
           </div>
 
           {/* Sub-Menu Content Container */}
