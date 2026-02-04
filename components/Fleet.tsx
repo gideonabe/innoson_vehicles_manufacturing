@@ -134,7 +134,7 @@ const Fleet = () => {
                   />
 
                   {/* GRADIENT */}
-                  <div className="absolute inset-0 bg-linear-to-tr from-black/80 via-transparent to-transparent opacity-90" />
+                  <div className="absolute inset-0 bg-linear-to-tr from-black/70 via-transparent to-transparent opacity-90" />
 
                   {/* TEXT CONTENT */}
                   <div className='absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end h-full z-20'>
@@ -145,17 +145,17 @@ const Fleet = () => {
                         </h3>
                         
                         <div className='flex items-center gap-2 text-white text-xs md:text-sm font-medium'>
-                          <span className="bg-blue-600/80 backdrop-blur-md px-3 py-1 rounded-sm">
-                            {vehicle.range || "N/A"}
+                          <span className="bg-blue-600/80 backdrop-blur-md px-3 py-1 rounded-xs ">
+                            {vehicle.range || "N/A"} mph
                           </span>
-                          <span className="bg-white/10 backdrop-blur-md px-3 py-1 rounded-sm border border-white/10">
-                            {vehicle.power || "N/A"}
+                          <span className="bg-white/10 backdrop-blur-md px-3 py-1 rounded-xs border border-white/10">
+                            {vehicle.power || "N/A"} hp
                           </span>
                         </div>
                       </div>
 
                       {/* ARROW */}
-                      <div className='bg-sky-500 p-2 md:p-3 rounded-full text-white md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out'>
+                      <div className='hidden md:flex bg-skyblue p-2 md:p-3 rounded-full text-white md:opacity-0 md:translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out'>
                         <ArrowRight className='w-5 h-5 md:w-6 md:h-6' />
                       </div>
                     </div>
