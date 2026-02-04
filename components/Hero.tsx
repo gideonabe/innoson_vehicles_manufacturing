@@ -59,7 +59,7 @@ const Hero = () => {
             </div>
           ))}
 
-          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-black/0 z-10"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-transparent z-10"></div>
         </div>
 
         {/* Content... */}

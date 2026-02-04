@@ -39,13 +39,13 @@ const DriveNow = () => {
         <div className='absolute inset-0 bg-darkblue/80 md:bg-darkblue/80 mix-blend-multiply' /> 
       </div>
 
-      <div className='relative z-10 w-[90%] max-w-7xl mx-auto flex flex-col gap-6 text-center justify-end md:justify-center h-full items-center'>
+      <div className='relative z-10 w-[90%] max-w-7xl mx-auto flex flex-col gap-6 text-center justify-end mb-20 md:justify-center h-full items-center'>
         
         <div className='space-y-2'>
           <h1 className='text-3xl md:text-4xl font-bold text-white tracking-tight'>
             Drive Now, Pay Later
           </h1>
-          <p className='text-white/80 text-lg md:text-xl max-w-2xl mx-auto'>
+          <p className='text-white/80 text-base md:text-xl max-w-2xl mx-auto'>
             Luxury ownership made accessible with <br /> our flexible financing plans
           </p>
         </div>
@@ -62,7 +62,7 @@ const DriveNow = () => {
           ))}
         </div> */}
 
-        <button className='mt-0 md:mt-4 font-bold bg-skyblue hover:bg-white hover:text-black transition-all duration-300 py-3 md:py-4 px-6 md:px-10 rounded-sm text-white'>
+        <button className='mt-0 md:mt-4 font-bold bg-skyblue hover:bg-white hover:text-black transition-all duration-300 py-3 md:py-4 px-6 md:px-10 rounded-sm text-sm md:text-base text-white'>
           Start your application
         </button>
       </div>

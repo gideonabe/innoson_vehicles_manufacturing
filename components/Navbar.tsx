@@ -5,15 +5,20 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { ChevronRight, ChevronLeft, Menu, X } from 'lucide-react'
 import nobg2 from '@/assets/nobg2.png'
+import nobg4 from '@/assets/nobg4.png'
+import nobg5 from '@/assets/nobg5.png'
+import nobg8 from '@/assets/nobg8.png'
+import nobg7 from '@/assets/nobg7.png'
+import { vehicleData } from '@/data/vehicle'
 
 // === DATA DEFINITIONS ===
 const menuVehicles = [
   { name: 'IVM G80', image: nobg2, slug: 'ivm-g80' },
-  { name: 'IVM G40', image: nobg2, slug: 'ivm-g80' },
-  { name: 'IVM Caris', image: nobg2, slug: 'ivm-g80' },
-  { name: 'IVM Granite', image: nobg2, slug: 'ivm-g80' },
-  { name: 'IVM Carrier', image: nobg2, slug: 'ivm-g80' }, 
-  { name: 'IVM Aso', image: nobg2, slug: 'ivm-g80' }, 
+  { name: 'IVM G40', image: nobg4, slug: 'ivm-g80' },
+  { name: 'IVM Carrier', image: nobg7, slug: 'ivm-g80' }, 
+  { name: 'IVM Granite', image: nobg8, slug: 'ivm-g80' },
+  { name: 'IVM Aso', image: nobg4, slug: 'ivm-g80' }, 
+  { name: 'IVM Caris', image: nobg5, slug: 'ivm-g80' },
 ];
 const modelSideLinks = ["Inventory", "Used Cars", "Demo Drive", "Trade-in", "Compare", "Fleet", "Semi"];
 

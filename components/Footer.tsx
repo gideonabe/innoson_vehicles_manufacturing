@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className="relative bg-black pt-24 pb-12 overflow-hidden border-t border-white/5 text-white/60">
       
       {/* Background Watermark (Converted from CSS to Tailwind) */}
-      <div className="absolute bottom-0 left-0 text-[15rem] leading-none opacity-[0.03] font-black select-none pointer-events-none text-white z-0">
+      <div className="absolute bottom-0 left-0 text-[15rem] leading-none opacity-[0.2] font-black select-none pointer-events-none text-white z-0">
         IVM
       </div>
 

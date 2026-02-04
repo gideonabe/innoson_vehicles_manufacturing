@@ -4,6 +4,9 @@ import image1 from '@/assets/image1.webp'
 import image2 from '@/assets/image2.webp'
 import image3 from '@/assets/image3.webp'
 import nobg1 from '@/assets/nobg2.png'
+import image4 from '@/assets/image4.jpeg'
+import image5 from '@/assets/image5.jpg'
+import image6 from '@/assets/image6.jpg'
 
 export interface Vehicle {
   id: number;
@@ -64,7 +67,7 @@ export const vehicleData: Vehicle[] = [
     category: 'SUVs',
     price: '₦60,000,000',
     // image: 'https://www.innosonvehicles.com/wp-content/uploads/2024/09/IVM-EV-LEMON-FRONT-1.png',
-    image: image1,
+    image: image4,
     range: 650,
     power: 350,
     description: "The IVM G80 is designed for the African elite. Combining rugged durability with executive-class luxury, it features a reinforced chassis suitable for all terrains without compromising on comfort.",
@@ -77,7 +80,7 @@ export const vehicleData: Vehicle[] = [
     category: 'SUVs',
     price: '₦55,000,000',
     // image: 'https://www.innosonvehicles.com/wp-content/uploads/2024/09/IVM-EV-BOX-WHITE-FRONT-1.png',
-    image: image2,
+    image: image5,
     range: 580,
     power: 300,
     description: "A testament to our heritage, the G40 is built for those who lead. It offers superior handling and safety features that redefine what an SUV can be.",
@@ -89,7 +92,7 @@ export const vehicleData: Vehicle[] = [
     name: 'IVM Caris',
     category: 'Sedans',
     price: '₦32,000,000',
-    image: image3,
+    image: image6,
     range: 420,
     power: 220,
     description: "The IVM Caris is designed for the African elite. Combining rugged durability with executive-class luxury, it features a reinforced chassis suitable for all terrains without compromising on comfort.",

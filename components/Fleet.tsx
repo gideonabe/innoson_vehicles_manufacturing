@@ -25,7 +25,7 @@ const Fleet = () => {
   useEffect(() => {
     const handleResize = () => {
       if (typeof window !== 'undefined') {
-        if (window.innerWidth >= 1024) setItemsPerPage(1); // Desktop: ~3 items
+        if (window.innerWidth >= 1024) setItemsPerPage(2); // Desktop: ~3 items
         else if (window.innerWidth >= 768) setItemsPerPage(2); // Tablet: ~2 items
         else setItemsPerPage(1); // Mobile: 1 item (plus peek)
       }
