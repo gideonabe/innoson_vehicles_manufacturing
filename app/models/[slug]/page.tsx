@@ -21,36 +21,36 @@ const VehicleDetails = async ({ params }: PageProps) => {
     <main className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-[#144bb8] selection:text-white">
       
       {/* 1. GLASS NAV (Sub-Nav Sticky) */}
-      <div className="sticky top-0 z-40 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+      <div className="sticky top-0 z-40 bg-white backdrop-blur-md border-b border-black/5">
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-14">
           
           {/* Back Link added for better UX */}
-          <Link href="/#models" className="flex items-center text-xs font-bold tracking-widest text-white/50 hover:text-white mr-6">
+          <Link href="/#models" className="flex items-center text-xs font-bold tracking-widest text-black/50 hover:text-white mr-6">
              <ArrowLeft className="w-4 h-4 mr-2" /> BACK
           </Link>
 
           <div className="flex gap-4 md:gap-8 h-full items-center overflow-x-auto no-scrollbar">
-            <a className="flex flex-col items-center justify-center border-b-2 border-[#144bb8] text-white h-full px-2" href="#overview">
+            <a className="flex flex-col items-center justify-center border-b-2 border-[#144bb8] text-black/80 h-full px-2" href="#overview">
               <p className="text-xs md:text-sm font-bold tracking-wider">OVERVIEW</p>
             </a>
-            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white h-full px-2 transition-colors" href="#performance">
+            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-black/80 h-full px-2 transition-colors" href="#performance">
               <p className="text-xs md:text-sm font-bold tracking-wider">PERFORMANCE</p>
             </a>
-            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white h-full px-2 transition-colors" href="#features">
+            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-black/80 h-full px-2 transition-colors" href="#features">
               <p className="text-xs md:text-sm font-bold tracking-wider">FEATURES</p>
             </a>
-            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white h-full px-2 transition-colors" href="#specs">
+            <a className="flex flex-col items-center justify-center border-b-2 border-transparent text-black/80 hover:text-white h-full px-2 transition-colors" href="#specs">
               <p className="text-xs md:text-sm font-bold tracking-wider">SPECS</p>
             </a>
           </div>
           <div className="hidden lg:flex items-center gap-4">
-            <p className="text-gray-400 text-xs font-medium uppercase tracking-widest">{vehicle.name} Edition</p>
+            <p className="text-black/80 text-xs font-medium uppercase tracking-widest">{vehicle.name} Edition</p>
           </div>
         </div>
       </div>
 
       {/* 2. HERO SECTION */}
-      <section className="relative w-full h-[100vh] overflow-hidden bg-[#0a0a0a]" id="overview">
+      <section className="relative w-full h-[95vh] overflow-hidden bg-[#fffefe]" id="overview">
         {/* Background Image Container */}
         <div className="absolute inset-0 flex items-center justify-center">
              {/* We use Next/Image with 'fill' and object-cover to mimic background-size: cover */}
@@ -63,14 +63,15 @@ const VehicleDetails = async ({ params }: PageProps) => {
                     priority
                 />
                 {/* Gradient Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/20 to-[#0a0a0a]/90" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-black/40" />
+                {/* <div className="absolute inset-0 bg-linear-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/20 to-[#0a0a0a]/90" /> */}
+                <div className="absolute inset-0 bg-linear-to-r from-[#0a0a0a] via-black/20 to-black/10" />
+                <div className="md:hidden absolute inset-0 bg-linear-to-r from-black via-black/40 to-black/40" />
              </div>
         </div>
 
         <div className="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-10 flex flex-col justify-end pb-24">
           <div className="max-w-2xl animate-[fadeIn_0.8s_ease-out]">
-            <h1 className="text-white text-5xl md:text-7xl font-light leading-tight tracking-tight mb-4">
+            <h1 className="text-white text-5xl md:text-6xl font-light leading-tight tracking-tight mb-4">
               {vehicle.name}<br/>
               <span className="font-bold">The Apex of Engineering</span>
             </h1>
@@ -80,7 +81,7 @@ const VehicleDetails = async ({ params }: PageProps) => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <div className="p-6 rounded-xl border border-white/10 bg-black/40 backdrop-blur-md">
                 <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Estimated Price</p>
-                <p className="text-white text-3xl font-bold leading-none">{vehicle.price}</p>
+                <p className="text-white text-xl md:text-3xl font-bold leading-none">{vehicle.price}</p>
               </div>
               <button className="bg-white text-black px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
                 Build Yours
